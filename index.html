@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="showplus()" type="button" class="btn btn-info">+</button>
+                <button onclick="showminus()" type="button" class="btn btn-info">-</button>
+                <button onclick="showtimes()" type="button" class="btn btn-info">x</button>
+                
+
+    <button onclick="showName()" type="button" class="btn btn-info">Нажми меня</button>
+    <script>
+        function showName(){
+    let name = prompt("What is your name?");
+    alert( `Hello, ${name} !`);
+}
+function showplus() {
+    const a = prompt("Первое число?");
+    const b = prompt("Второе число?");
+    alert(+a + +b);
+}
+
+function showminus() {
+    const a = prompt("Первое число?");
+    const b = prompt("Второе число?");
+    alert(a - b);
+}
+
+function showtimes() {
+    const a = prompt("Первое число?");
+    const b = prompt("Второе число?");
+    alert(a * b);
+}
+
+function showdivide() {
+    const a = prompt("Первое число?");
+    const b = prompt("Второе число?");
+    if (b == 0) {
+        alert ('На ноль делить нельзя!');
+}
+else {
+    alert (a/b);
+}
+}
+
+    </script>
+</body>
+</html>
