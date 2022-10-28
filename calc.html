@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -34,12 +37,12 @@
 
         function plus() {
             let num1, num2, result;
-            num1 = document.getElementById('number1').value;
+            num1 = document.getElementById('number1').value; // привязываем переменную к нашему инпуту
             num1 = parseInt(num1); // преобразование строки в число
-            num2 = document.getElementById('number2').value;
+            num2 = document.getElementById('number2').value; // привязываем переменную к нашему инпуту
             num2 = parseInt(num2); // преобразование строки в число
             result = num1 + num2;
-            document.getElementById('out').innerHTML = result;
+            document.getElementById('out').innerHTML = result; // привязываем переменную резалт к параграфу с результатом
         }
         function minus() {
             let num1, num2, result;
