@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+
+        #purple {
+            background-color: #b39ddb;
+        }
+
+        #green {
+            background-color: #cdfa9b;
+        }
+
+        #orange {
+            background-color: #ffcc80;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="purple" onclick="clickMe()"> </div>
+    <div id="green" onclick="clickMe1()"> </div>
+    <div id="orange" onclick="clickMe2()"> </div>
+
+
+    <script>
+        function clickMe() {
+            let changeMe = document.getElementById('purple');
+            changeMe.style.background = "#ffcc80";
+        }
+
+        function clickMe1() {
+            let changeMe = document.getElementById('green');
+            changeMe.style.background = "#b39ddb";
+        }
+
+        function clickMe2() {
+            let changeMe = document.getElementById('orange');
+            changeMe.style.background = "#cdfa9b";
+        }
+    </script>
+</body>
+
+</html>
