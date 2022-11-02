@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <input id="elem" type="button" value="Нажми меня"/>
+
+<script>
+  function handler1() {
+    alert('Спасибо!');
+  };
+
+  function handler2() {
+    alert('Спасибо ещё раз!');
+  }
+
+	let button = document.getElementById("elem");
+  button.onclick = () => alert("Привет");
+  button.addEventListener("click", handler1); // Спасибо!
+  button.addEventListener("click", handler2); // Спасибо ещё раз!
+
+
+</script>
     
 </body>
 </html>

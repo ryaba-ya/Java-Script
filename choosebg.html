@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #green {
+            background-color: #bae077;
+        }
+
+        #yellow {
+            background-color: #f3df5b;
+        }
+
+        #black {
+            background-color: #000000;
+        }
+        #blue {
+            background-color: #92aeda;
+        }
+        #blue {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <label for >Chose background Theme:</label>
+    <select id="selectId">
+
+        <option id="green" value="GR" onclick="changeTheme('green')" data-color="#bae077">Green</option>
+        
+        <option value=”YE” id="yellow" onclick="changeTheme('yellow')">Yellow</option>
+        
+        <option value=”BL” id="black" onclick="changeTheme('black')">Black</option>
+
+        <option value=”” id="blue" onclick="changeTheme('blue')">Blue</option>
+        
+        <option value=”YE” id="white" onclick="changeTheme('white')">White</option>
+    
+        
+        </select>
+       
+ <script>
+
+let selector = document.getElementById("selectId"); 
+let bgColor = document.body.style.background; 
+
+selector.addEventListener("click", () => {
+// if default value is changed
+  selector.addEventListener("change", () => {
+  // if value switched by client
+    switch (selector.value) {
+      case "GR":
+      //do somthing with  , "add" value
+      bgColor.innerHTML = "#cdfa9b";
+        break;  // then take break
+      case "YE":
+      //do somthing with  , "remove" value
+      document.body.style.background = "#red";
+
+        break; // then take break
+    }
+  });
+});
+
+
+            
+ </script>   
+</body>
+</html>
