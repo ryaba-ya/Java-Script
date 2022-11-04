@@ -15,6 +15,7 @@ function calcMinus(){
     let operand1 = prompt('First number');
     let operand2 = prompt('second number');
    let result=  operand1 / operand2;
+//    Если значение результата === бесконечности, тогде вывести Делить на ноль нельзя
    if (result===Infinity){
     alert("Делить на 0 нельзя");
    } else{
