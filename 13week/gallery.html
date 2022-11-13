@@ -7,24 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="elem" type="button" value="Нажми меня"/>
+  <!-- slider block-->
+<div class="slider">
 
-<script>
-  function handler1() {
-    alert('Спасибо!');
-  };
+  <!-- first slide -->
+  <div class="slider__item">
+    <img src="">
+  </div>
+  <!-- second slide -->
+  <div class="slider__item">
+    <img src="">
+  </div>
+  <!-- third slide -->
+  <div class="slider__item">
+    <img src="">
+  </div>
 
-  function handler2() {
-    alert('Спасибо ещё раз!');
-  }
+  <!-- slider buttons -->
+  <button class="previous-btn"></button>
+  <button class="next-btn"></button>
 
-	let button = document.getElementById("elem");
-  button.onclick = () => alert("Привет");
-  button.addEventListener("click", handler1); // Спасибо!
-  button.addEventListener("click", handler2); // Спасибо ещё раз!
+</div>
 
-
-</script>
-    
+    <script src="script/gallery.js"></script> 
 </body>
 </html>
