@@ -1,19 +1,14 @@
 function clickMe() {
-    var e = document.getElementById("purple");
-    var c = window.getComputedStyle(e).backgroundColor;
-    if (c === "rgb(0, 0, 0)") {
-    document.getElementById("purple").style.background = "#ff77ee";
-} else  if(c === "rgb(0, 0, 5)"){
-    document.getElementById("purple").style.background = "#005";
-}
-}
+    let changeMe = document.getElementById("purple" );
+    if (changeMe.style.background === " rgb(88, 45, 45)") {
+        changeMe.style.background = "rgb(174, 121, 121)";
 
-function clickMe1() {
-    let changeMe = document.getElementById('green');
-    changeMe.style.background = "#b39ddb";
-}
+    } else if (changeMe.style.background === "rgb(174, 121, 121)") {
+        changeMe.style.background = " rgb(88, 45, 45)";
 
-function clickMe2() {
-    let changeMe = document.getElementById('orange');
-    changeMe.style.background = "#cdfa9b";
+    } else {
+        changeMe.style.background = "rgb(174, 121, 121)";
+
+    }
+
 }
