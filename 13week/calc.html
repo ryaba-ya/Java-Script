@@ -10,11 +10,26 @@
 </head>
 
 <body>
-    <label>Choose an operator</label>
-    <button onclick="calcPlus()" type="button"> + </button>
-    <button onclick="calcMinus()" type="button"> - </button>
-    <button onclick="calcTimes()" type="button"> * </button>
-    <button onclick="calcDivide()"type="button"> / </button>
+    <!-- First number -->
+    <input id="number1" type="text">
+
+    <!-- Operators -->
+    <div id="operator-btn">
+        <button id="plus" onclick="plus()">+</button>
+        <button id="minus" onclick="minus()">-</button>
+        <button id="times" onclick="times()">*</button>
+        <button id="divide" onclick="divide()">:</button>
+    </div>
+
+    <!-- Second number -->
+
+    <input id="number2" type="text">
+
+<button onclick=""> Count</button>
+    <!-- Result -->
+
+    <hr>
+    <p id="out"> </p>
    
 <script src="script/calc.js"></script>
 </body>

@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .slider {
+        width: 500px;
+        height: 100px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
 </head>
 <body>
   <!-- slider block-->
 <div class="slider">
 
   <!-- first slide -->
-  <div class="slider__item">
-    <img src="">
-  </div>
+  
+    <img id="item" src="assets/14823.jpeg"/>
+  
   <!-- second slide -->
-  <div class="slider__item">
-    <img src="">
-  </div>
-  <!-- third slide -->
-  <div class="slider__item">
-    <img src="">
-  </div>
+ 
 
   <!-- slider buttons -->
-  <button class="previous-btn"></button>
-  <button class="next-btn"></button>
+  <button id="previous-btn" onclick="backSlide()"></button>
+  <button id="next-btn" onclick="nextSlide()"></button>
 
 </div>
 
