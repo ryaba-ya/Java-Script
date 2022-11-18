@@ -1,0 +1,22 @@
+.registration__block {
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
+    width: 400px;
+    padding: 30px 0;
+    margin-top: 86px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+
+div {
+    display: block;
+}
+h1{
+   
+        font: 21px/1.5em 'Yandex-Sans-Text-Web-Regular';
+        margin-bottom: 40px;
+        color: #000;
+        text-align: center;
+        margin: 0 0 24px;
+    
+}
