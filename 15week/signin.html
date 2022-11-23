@@ -14,31 +14,31 @@
     <div>
         <div class="wrapper">
             <div class="form">
-                <form action="#" class="form__body" id="form">
+                <form action="#" name="main" class="form__body" id="form">
                     <h1 class="form__title">Registration </h1>
                     <div class="form__item">
-                        <label for="formName" class="form__label">Name*:</label>
-                        <input class="form__input" id="formName" name="name">
+                        <label for="formName" class="form__label ">Username</label>
+                        <input class="form__input warning" id="formName" placeholder="Name..." name="name">
                     </div>
                     <div class="form__item">
-                        <label for="formEmail" class="form__label">E-mail*:</label>
-                        <input class="form__input" id="formEmail" name="email">
+                        <label for="formEmail" class="form__label ">Email</label>
+                        <input class="form__input warning" type="email" id="formEmail"  name="email">
                     </div>
                     <div class="form__item ">
                         <div class="options">
                             <div class="options__item">
                                 <input id="formRightHanded" value="right" class="options__input" name="hand"
                                     type="radio">
-                                <label for="formRightHanded" class="options__label"><span>Right</span></label>
+                                <label for="formRightHanded" class="options__label"><span>Male</span></label>
                             </div>
                             <div class="options__item">
                                 <input id="formLeftHanded" value="left" class="options__input" name="hand" type="radio">
-                                <label for="formLeftHanded" class="options__label"> <span>left</span></label>
+                                <label for="formLeftHanded" class="options__label"> <span>Female</span></label>
                             </div>
                         </div>
                     </div>
                     <div class="form__item">
-                        <label for="formMessage" class="form__label">Message:</label>
+                        <label for="formMessage" class="form__label">Message</label>
                         <textarea name="message" class="form__input" id="formMessage"></textarea>
                     </div>
                     <div class="form__item">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="form__item">
                         <div class="checkbox">
-                            <input id="formAgreement" checked name="agreement" class="checkbox__input" type="checkbox">
+                            <input id="formAgreement" checked name="agreement" class="checkbox__input warning" type="checkbox">
                             <label for="formAgreement" class="checkbox__label"><span> Day soglassie na obrbotky v sootvetcvii s <a href="">ysloviyzmi</a> * </span></label>
                         </div>
                     </div>

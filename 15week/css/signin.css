@@ -30,6 +30,9 @@
     width: 100%;
     font-size:18px ;
 }
+.main-form__error{
+    color: rgb(161, 14, 14);
+}
 .form__input:focus{
     box-shadow: 0 0 15px rgb(229, 134, 134);
 }
