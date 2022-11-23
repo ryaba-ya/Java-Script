@@ -63,7 +63,7 @@ form.addEventListener('submit', function(event){
     console.log("sending!");
 let emailValue = inputEmail.value;
 let nameValue = inputName.value;
-let emptyInputs = Array
+
 
 formInputs.forEach(function (input) {
     if(input.value ===""){
@@ -82,6 +82,7 @@ formInputs.forEach(function (input) {
 
     return false;
 })
+
 //const emailInput = mainForm.email;
 //mainForm.addEventListener("submit", function(event){
    // if(emailTest(emailInput)){
