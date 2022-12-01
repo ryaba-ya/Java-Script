@@ -1,20 +1,39 @@
-document.forms.publish.onsubmit = function () {
-    let message = this.message.value;
+const input = document.querySelector(".number");
+const oneMoreBtn = document.querySelector(".oneMore");
+const doneBtn = document.querySelector(".done");
+const error = document.querySelector('.error');
+const result = document.querySelector('.result');
+const summa = document.querySelector('.sum');
 
-    let arr = message.split(',')
-    //console.log(message)
-    //console.log(typeof arr);
-    
 
-    function compareNumber(a, b) {
-        return a - b
+
+let arr = [];
+
+function compareNumber(a, b) {
+    return a - b
+}
+const addNextNumber = () => {
+    let number = Number(input.value)
+    if (number) {
+        arr.push(number);
+
+    } else {
+        error.innerHTML = "error"
     }
-    console.log(arr.sort(compareNumber));
+    result.innerHTML = arr.sort(compareNumber)
+    input.value = ''
 
-    let sumArray = arr.reduce( (accumulator, item, index, array) {
-        return item + accumulator;
-    }, 0);
-    console.log(sumArray);
 
-    return false;
-};
+}
+const getSum = () => {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    summa.innerHTML = sum
+    error.innerHTML = ""
+}
+
+oneMoreBtn.addEventListener('click', addNextNumber)
+
+doneBtn.addEventListener('click', getSum)
