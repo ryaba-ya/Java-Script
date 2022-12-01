@@ -13,6 +13,9 @@ let arrThree = [
 ]
 let result = arrThree.findIndex(item => item.length>3);
 console.log(result);
+let aname = "настя";
+
+
 
 
 

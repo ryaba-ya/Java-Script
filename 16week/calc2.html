@@ -9,12 +9,17 @@
 </head>
 
 <body>
-    <form name="publish">
-        <label for="numbers" class="form__label ">Введите несколько числовых значений через запятую </label>
-        <input class="form__input warning" id="numbers" placeholder="1,2,3,4..." type="text" name="message">
-        <button type="submit">Ready</button>
-    </form>
-
+    <div class="block1">
+        <label class=" ">Введите несколько числовых значений через запятую </label>
+        <input class="number" id="numbers" placeholder="1,2,3,4..." type="text" name="message">
+        <button class="oneMore" type="">one more</button>
+        <button class="done">Done</button>
+    </div>
+    <div class="block2">
+        <div class="result"></div>
+    </div>
+    <div class="error"></div>
+    <div class="sum"></div>
     <script src="/16week/script/calc2.js"></script>
 </body>
 
