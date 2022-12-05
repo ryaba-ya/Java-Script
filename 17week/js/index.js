@@ -9,8 +9,13 @@ let patronymic = document.querySelector(".patronymic");
 function getName() {
     let value = fullName.value
  let newWalue= value.replace(/ +/g, ' ').trim();
+ console.log(newWalue);
   
     let arr =value.split(" ");
+    arr= arr.filter(function (el) {
+        return ( el != "" || el === 0);
+    });
+    console.log(arr);
     
     secondName.value = arr.shift();
     secondName.value = secondName.value.slice(0, 1).toUpperCase() + secondName.value.slice(1).toLowerCase();
