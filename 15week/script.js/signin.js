@@ -58,14 +58,21 @@ const formInputs = document.querySelectorAll(".warning");
 const inputEmail = form.email;
 const inputName = form.name;
 const inputCheckbox = form.agreement;
+let fields = document.querySelector(".main-form__error")
 
 form.addEventListener('submit', function(event){
+    event.preventDefault()
+
     console.log("sending!");
+    
+
 let emailValue = inputEmail.value;
 let nameValue = inputName.value;
 
 
 formInputs.forEach(function (input) {
+
+
     if(input.value ===""){
         input.parentElement.insertAdjacentHTML(
              "beforeend",
@@ -73,11 +80,12 @@ formInputs.forEach(function (input) {
              Это поле обязательно для заполнения!
              </div>`
          );
+         
         event.preventDefault();
         console.log("input not filled");
-    } else {formInputs.classList.remove('main-form__error');
-
-    }
+   
+    } 
+   
 })
 
     return false;

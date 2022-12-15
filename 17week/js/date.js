@@ -1,5 +1,11 @@
 
-let now = new Date();
-let tomorrow = new Date(2022,11,9,00,00)
-let diff = Date.now() - tomorrow;
-console.log(diff/1000);
+function ValidateInput(emailField) {
+    var inputFormat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+    if (emailField.value.match(inputFormat)) {
+        return true;
+    }
+    else {
+        alert("Только числа!");
+        return false;
+    }
+}

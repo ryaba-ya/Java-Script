@@ -5,6 +5,7 @@ let maxNumber = document.querySelector(".max");
 let sumNumber = document.querySelector(".summa");
 let average = document.querySelector(".average");
 let devideNumbers = document.querySelector(".devide");
+let remove = document.querySelector(".remove")
 
 let arr = [];
 let generate = () => {
@@ -48,5 +49,8 @@ let generate = () => {
 function rand(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 };
-
+const removeAll =()=>{
+    minNumber.innerHTML = "Минимальное:  "
+}
 button.addEventListener('click', generate);
+button.addEventListener('click',removeAll)
