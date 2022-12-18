@@ -58,48 +58,60 @@ const formInputs = document.querySelectorAll(".warning");
 const inputEmail = form.email;
 const inputName = form.name;
 const inputCheckbox = form.agreement;
-let fields = document.querySelector(".main-form__error")
+const faild = document.querySelector(".main-form__error")
 
-form.addEventListener('submit', function(event){
-    event.preventDefault()
-
-    console.log("sending!");
-    
-
-let emailValue = inputEmail.value;
-let nameValue = inputName.value;
-
-
-formInputs.forEach(function (input) {
+function validEmail(email){
+    let re =  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+form.onsubmit = function(){
+    let emailValue = inputEmail.value;
+    let nameValue = inputName.value;
+    let emptyInputs = 
 
 
-    if(input.value ===""){
-        input.parentElement.insertAdjacentHTML(
-             "beforeend",
-            `<div class="main-form__error">
-             Это поле обязательно для заполнения!
-             </div>`
-         );
-         
-        event.preventDefault();
-        console.log("input not filled");
-   
-    } 
-   
-})
+    formInputs.forEach( function(input){
+       
+        if(input.value === ""){
+           input.classList.add("error")
+           console.log("input not field");
+        
+        }else{
+           input.classList.remove("error")
+        }
+    });
 
+  if (!inputCheckbox.checked)  {
+    inputCheckbox.classList.add("error")
+    inputCheckbox.parentElement.insertAdjacentHTML(
+        "beforeend",
+        `<divclass="main-form__error">
+        Вв не согласились с политикой конфидициальности!
+        </div>`
+   );
     return false;
-})
 
-//const emailInput = mainForm.email;
-//mainForm.addEventListener("submit", function(event){
-   // if(emailTest(emailInput)){
-       // emailInput.parentElement.insertAdjacentHTML(
-           // "beforeend",
-           // `<divclass="main-form__error">
-           // write ypur email
-           // </div>`
-       // );
-       // event.preventDefault();
-   // }
-//})
+  }else{
+    faild.remove()
+    input.classList.remove("error")
+  }
+if(!validEmail(emailValue)){
+    console.log("no valid")
+    inputEmail.parentElement.insertAdjacentHTML(
+         "beforeend",
+         `<divclass="main-form__error">
+         write ypur email
+         </div>`
+    );
+    return false
+}else{
+faild.remove()
+input.classList.remove("error")
+
+}
+
+
+
+
+    return false ;
+}

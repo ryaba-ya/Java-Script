@@ -30,6 +30,9 @@
     width: 100%;
     font-size:18px ;
 }
+.warning.error{
+    border-color: red;
+}
 .main-form__error{
     color: rgb(161, 14, 14);
 }
@@ -41,8 +44,10 @@ textarea.form__input{
     resize: vertical; /* полле ввода не двигается мышкой по горизонтали, только вертикально*/
     padding: 20px;  /* отступ от края внутри поля ввода */
 }
-.options {
+.checkbox__input.error + .checkbox__label {
+    color: red;
 }
+
 .options__item {
     margin: 10px 0px 10px 0px;
 }
