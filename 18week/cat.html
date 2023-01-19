@@ -29,11 +29,11 @@
             date and the date of your cat to participate in the casting.Good luck! Meow.</p>
             
             <h3>Registration</h3>
-                <form method="post" enctype="multipart/form-data"> 
+                <form > 
 ​
                     <div style="margin-bottom:20px ;">
                         <label  for="namepet"> <b>Pet name* </b></label> 
-                        <input type="text" placeholder="Пушок" title="Имя может включать в себя только буквы. Первая буква заглавная" id="namepet" pattern="^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$" required></div>
+                        <input type="text" placeholder="Пушок" title="Имя может включать в себя только буквы. Первая буква заглавная" class="name" id="namepet" pattern="^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$" required></div>
                     <div style="margin-bottom:20px ;">
                         <label for="phone"> <b>Phone number*</b></label>
                         <input type="tel" name="phone"
@@ -47,28 +47,28 @@
                     <fieldset>
                         <legend>What does your pet eat*</legend>
                          <div style="margin-bottom:20px ;">
-                            <input type="checkbox" name="food" value="dry" >Dry food</div>
+                            <input class="food" type="checkbox" name="food" value="dry" >Dry food</div>
                          <div style="margin-bottom:20px ;">
-                            <input type="checkbox" name="food"  value="wet" >Wet food</div> 
+                            <input type="checkbox" class="food" name="food"  value="wet" >Wet food</div> 
                          <div>
-                            <input type="checkbox" name="food"  value="nature" >Nature food</div>    
+                            <input type="checkbox" class="food" name="food"  value="nature" >Nature food</div>    
                     </fieldset>    
            
                     <div style="margin-bottom:20px ;"><p> <b> Gender of ypur Pet*</b></p>
-                        <input type="radio" name="sex" value="male" id="man" required />
+                        <input  class="sex" type="radio" name="sex" value="male" id="man" required />
                         <label for="man">Boy</label> 
-                        <input type="radio" name="sex" value="female" id="woman" />
+                        <input class="sex" type="radio" name="sex" value="female" id="woman" />
                         <label for="woman">Girl</label> </div>
                         
                      <label for="breed"> <b> Pet breed</b></label>
-                     <select id="breed" required >  
-                        <option value="">Oriental</option>
-                        <option value="1">Abyssinisn</option>
-                        <option value="2">Sphynx</option>
-                        <option value="3">Scottish Fold</option>
-                        <option value="4">Persian</option>
-                        <option value="5">British Shorthair</option>
-                        <option value="6">Ragdoll</option>
+                     <select class="breedsel" id="breed" required >  
+                        <option value="Oriental">Oriental</option>
+                        <option value="Abyssinisn">Abyssinisn</option>
+                        <option value="Sphynx">Sphynx</option>
+                        <option value="Scottish Fold">Scottish Fold</option>
+                        <option value="Persian">Persian</option>
+                        <option value="British Shorthair">British Shorthair</option>
+                        <option value="Ragdoll">Ragdoll</option>
                         <option value="7" selected>Choose a breed</option>
                      </select>
                 
@@ -87,7 +87,7 @@
                          <textarea id="coment" name="comment" rows="10" cols="30"> Tell us more about your pet...</textarea> </div>
                            
                     <div>
-                        <button>Submit</button></div>
+                        <button class="button">Submit</button></div>
                             
                 </form>
                
