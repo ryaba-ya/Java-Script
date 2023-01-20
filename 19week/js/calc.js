@@ -1,65 +1,64 @@
-"use strict"
+let num1 = document.querySelector(".a")
+let num2 = document.querySelector(".b")
+let result = document.querySelector(".result")
+let buttonPlus = document.querySelector(".plus")
+let buttonMinus = document.querySelector(".minus")
+let buttonTimes = document.querySelector(".times")
+let buttonDivide = document.querySelector(".divide")
+let cleanButton = document.querySelector(".clean")
 
-let operator;
-const buttonplus=document.getElementById("plus")
+class Calc {
+    static sum() {
+        let a = num1.value
+        a = parseInt(a)
+        let b = Number(num2.value)
+        let result1 = a + b
+        console.log(result1)
+        result.innerHTML = result1
 
-
-class Calc{
-    constructor(num1,num2,result){
-        this.num1=document.querySelector('#number1').value;
-        this.num2=document.querySelector('#number2').value;
-        this.result= result
-        console.log(num1);
-       
     }
-    static plus(num1,num2){
-        console.log(num1);
-        num1 = parseInt(num1);
-        num2 = parseInt(num2);
-       let  result = num1 + num2;
-        document.querySelector('#out').innerHTML = result;
-        console.log(num1);
-      
-    }
+    static minus() {
+        let a = Number(num1.value);
 
+        let b = Number(num2.value);
+        let result1 = a - b;
+        console.log(result1);
+        document.querySelector(".result").innerHTML = result1;
+
+    }
+    static times() {
+        let a = num1.value
+        a = parseInt(a)
+        let b = Number(num2.value)
+        let result1 = a * b
+        console.log(result1)
+        result.innerHTML = result1
+
+    }
+    static divide() {
+        let a = num1.value
+        a = parseInt(a)
+        let b = Number(num2.value)
+        let result1 = a / b
+        console.log(result1)
+        if (result1 === Infinity) {
+            result.innerHTML = "Делить на ноль нельзя"
+        } else {
+            result.innerHTML = result1
+        }
+
+
+
+    }
+    static clean() {
+        num1.value = "";
+        num2.value = "";
+        result.innerHTML = "";
+    }
 }
-    let numbers =[
-    new Calc ("num1","num2")
-]
 
-
-        
-        function minus() {
-            let num1, num2, result;
-            num1 = document.querySelector('#number1').value;
-            num1 = parseInt(num1);
-            num2 = document.querySelector('#number2').value;
-            num2 = parseInt(num2);
-            result = num1 - num2;
-            document.querySelector('#out').innerHTML = result;
-        }
-        function times() {
-            let num1, num2, result;
-            num1 = document.querySelector('#number1').value;
-            num1 = parseInt(num1);
-            num2 = document.querySelector('#number2').value;
-            num2 = parseInt(num2);
-            result = num1 * num2;
-            document.querySelector('#out').innerHTML = result;
-        }
-        function divide() {
-            let num1, num2, result;
-            num1 = document.querySelector('#number1').value;
-            num1 = parseInt(num1);
-            num2 = document.querySelector('#number2').value;
-            num2 = parseInt(num2);
-            result = num1 / num2;
-            if (result===Infinity){
-                document.querySelector('#out').innerHTML = "Делить на ноль нельзя"
-               } else{
-                document.querySelector('#out').innerHTML = result;
-               };
-            
-        }
-//    Если значение результата === бесконечности, тогде вывести Делить на ноль нельзя
-   buttonplus.addEventListener("click",Calc.plus)
+buttonPlus.addEventListener("click", Calc.sum)
+buttonMinus.addEventListener("click", Calc.minus)
+buttonTimes.addEventListener("click", Calc.times)
+buttonDivide.addEventListener("click", Calc.divide)
+cleanButton.addEventListener("click", Calc.clean)
