@@ -141,18 +141,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
    
 
     document.getElementById('submit').onclick = function() {
-        var selected = [];
-        for (var option of document.getElementById('pets').options) {
-          if (option.selected) {
-            selected.push(option.value);
-            option.value=""
-          }
+        let selected = [];
+        function getRating(){
+            let options=document.querySelectorAll("#pets")
+           for (let option of options) {
+            if (option.selected) {
+              selected.push(option.value);
+              option.value=""
+            }}
+        
           let arrayToStr = JSON.stringify(selected);
           localStorage.setItem("heroesScore", arrayToStr);
         }
      
-       cards.ratin=selected
-       console.log(cards);
+    
+
       }
       
 })
