@@ -12,8 +12,7 @@ fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${document.get
        console.log(date.fname)
     document.getElementById("ok").innerText=date.result;
     document.getElementById("prsnt").innerText=`${date.percentage}%`;
-    document.getElementById("firstName").value=date.fname;
-    document.getElementById("secName").value=date.sname;
+   
     console.log( date.result)
     
 
