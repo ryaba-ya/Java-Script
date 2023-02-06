@@ -1,16 +1,25 @@
-let button = document.getElementById("postButton");
 
-
-button.addEventListener("click",sendForm);
-
-function sendForm(e) {
+const form = document.querySelector("form")
+let fname=document.querySelector("#firstname").value;
+let lname=document.querySelector("#lastname").value
+form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    let form = document.querySelector(".form");
-    fetch("https://httpbin.org/post", {
-        method: "POST",
-        body: new FormData(form)
-    })
+    
+    console.log(form)
+  
+   
+    fetch("https://httpbin.org/post",
+        {
+            method: 'POST',
+            body: new FormData(form)
+            
+        })
         .then(response => response.json())
-        .then(user => console.log(user))
-        .catch(error => console.log(error))
-}
+        .then(user => {
+            console.log(form)
+            console.log(user);
+        })
+        .catch(error => console.log(error));
+})
+ 
+   

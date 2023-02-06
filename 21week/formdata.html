@@ -32,46 +32,20 @@ body {
     box-shadow: 5px 25px 35px #3535356b;
 }
 
-.wrapper label {
-    display: block;
-    padding-bottom: 0.2rem;
-}
-
-.wrapper .form .row {
-    padding: 0.6rem 0;
-}
 
 
 
-.wrapper .form .option {
-    position: relative;
-    padding-left: 20px;
-    cursor: pointer;
-}
 
 
-.wrapper .form .option input[type="radio"]:checked~.checkmark {
-    background: #fff;
-    transition: 300ms ease-in-out 0s;
-}
 
 
-@media(max-width: 768.5px) {
-    .wrapper {
-        margin: 30px;
-    }
 
-    .wrapper .form .row {
-        padding: 0;
-    }
-}
 
-@media(max-width: 400px) {
-    .wrapper {
-        padding: 25px;
-        margin: 20px;
-    }
-}
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -79,32 +53,32 @@ body {
 
         <div class="h3">Registration Form</div>
 
-        <form method="post" action="https://httpbin.org/post" class="form">
+        <form  id="form" method="post" action="https://httpbin.org/post">
             
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>First Name</label>
-                    <input id="firstname" type="text" class="form-control" required>
+                    <input id="firstname" name="firstName" type="text" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Last Name</label>
-                    <input id="lastname" type="text" class="form-control" required>
+                    <input name="lastName" id="lastname" type="text" value="ttttt" class="form-control" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Birthday</label>
-                    <input type="date" id="birth" class="form-control" required>
+                    <input name="birthday" type="date" id="birth" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Gender</label>
                     <div class="d-flex align-items-center mt-2">
                         <label class="option">
-                            <input type="radio" id="gender" name="radio">Male
+                            <input type="radio" id="gender" name="male">Male
                             <span class="checkmark"></span>
                         </label>
                         <label class="option ms-4">
-                            <input type="radio" name="radio">Female
+                            <input type="radio" name="female">Female
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -113,11 +87,11 @@ body {
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Email</label>
-                    <input id="email" type="email" class="form-control" required>
+                    <input id="email" type="email" name="email" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Phone Number</label>
-                    <input id="number" type="tel" class="form-control" required>
+                    <input id="number" name="number" type="tel" class="form-control" required>
                 </div>
             </div>
            
