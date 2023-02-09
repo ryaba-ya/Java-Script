@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ryaba-ya/Java-Script/issues"
   },
-  "homepage": "https://github.com/ryaba-ya/Java-Script#readme"
+  "homepage": "https://github.com/ryaba-ya/Java-Script#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
