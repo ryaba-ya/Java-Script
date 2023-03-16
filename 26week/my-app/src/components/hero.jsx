@@ -1,4 +1,5 @@
 import './hero.css';
+
 function Hero (props){
     return(
         <div className='hero-card'>
