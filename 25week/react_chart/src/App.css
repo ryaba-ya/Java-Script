@@ -36,10 +36,4 @@
     transform: rotate(360deg);
   }
 }
-.hero-card{
-  width: 200px;
-  height: 100px;
-}
-.hero-name{
-  color : #d0612a;
-}
+
