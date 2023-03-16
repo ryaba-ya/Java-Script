@@ -10,7 +10,7 @@ class App extends React.Component  {
        
         <div className="hero-name">Spider-Man</div>
         <div className="hero-text">Lorem ipsun</div>
-        
+        <button> Take home</button>
       </div>
       
     </div>
