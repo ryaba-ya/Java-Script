@@ -1,7 +1,12 @@
 .hero-card{
-    width: 200px;
-    height: 100px;
-    border: 2px solid red;
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(165, 42, 42, 0.582);
+    background-color: rgba(165, 42, 42, 0.486);
+    text-align: center;
 }
 .hero-img{
     width: 100%;
