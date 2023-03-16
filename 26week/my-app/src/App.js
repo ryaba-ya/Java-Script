@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+
 
 // or less ideally
-import { Button } from 'react-bootstrap';
+
 
 class App extends React.Component  {
   render(){
