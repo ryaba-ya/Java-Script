@@ -18,6 +18,8 @@ universe={hero.universe}
 alterEgo={hero.alterEgo}
 img={hero.img}
 details={hero.details}
+friends={hero.friends}
+occupation={occupation}
 
 ></Hero>
 )
