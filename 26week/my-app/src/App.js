@@ -19,9 +19,9 @@ alterEgo={hero.alterEgo}
 img={hero.img}
 details={hero.details}
 friends={hero.friends}
-superPower={hero.superPower}
-
-></Hero>
+superPower={hero.superPower}>
+  
+</Hero>
 )
      }
     </div>
