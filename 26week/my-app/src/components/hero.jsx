@@ -7,15 +7,15 @@ function Hero (props){
            <div className='card-body'>
            <div className='hero-name' >{props.name}</div>
             <div className ="hero-text">{props.details}</div>
-            <div className="heroes-superpowers">
+            <div className="wrap">
                 <span>Вселенная: </span>
                 {props.universe}
             </div>
-            <div className="heroes-superpowers">
+            <div className="wrap">
                 <span>Альтер эго: </span>
                 {props.alterEgo}
             </div>
-            <div className="heroes-superpowers">
+            <div className="wrap">
                 <span>Род деятельности:</span>
                 {props.occupation}
             </div>
