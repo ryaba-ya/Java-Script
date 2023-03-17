@@ -4,11 +4,11 @@
    height: 800px;
     margin: auto;
     text-align: center;
-    display: flex;
+  flex-direction: row;
 }
 .hero-img{
     width: 100%;
-   flex: 1;
+ 
 }
 .hero-name{
     color: grey;
@@ -16,5 +16,5 @@
    
 }
 .card-body{
-flex: 2;
+
 }
