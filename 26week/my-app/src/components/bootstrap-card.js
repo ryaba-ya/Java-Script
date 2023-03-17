@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function KitchenSinkExample() {
   return (
     <Card className='row' style={{ width: '18rem' }}>
-      <Card.Img className='col-md-4' variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img className='col-md-4 img-fluid' variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Body className='col-md-8'>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
