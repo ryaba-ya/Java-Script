@@ -8,10 +8,13 @@
 }
 .hero-img{
     width: 100%;
-   flex-direction: row;
+   flex: 1;
 }
 .hero-name{
     color: grey;
     font-size: 18px;
    
+}
+.card-body{
+flex: 4;
 }
