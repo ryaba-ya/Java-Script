@@ -6,6 +6,7 @@ function Hero (props){
             <img className='hero-img ' src={props.url}/>
            
             <div className='hero-name' >{props.name}</div>
+            <div className ="hero-text">{props.text}</div>
             <div className='hero-text'></div>
             <button>Take home</button>
            
