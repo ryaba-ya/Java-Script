@@ -17,6 +17,7 @@ name={hero.name}
 universe={hero.universe}
 alterEgo={hero.alterEgo}
 img={hero.img}
+details={hero.details}
 
 ></Hero>
 )
