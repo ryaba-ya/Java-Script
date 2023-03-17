@@ -4,7 +4,8 @@
    height: 800px;
     margin: auto;
     text-align: center;
-  flex-direction: column;
+  flex-direction: ;
+  display: block;
 }
 .hero-img{
     width: 100%;
