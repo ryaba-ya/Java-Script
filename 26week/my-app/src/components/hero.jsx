@@ -7,7 +7,10 @@ function Hero (props){
            <div className='card-body'>
            <div className='hero-name' >{props.name}</div>
             <div className ="hero-text">{props.text}</div>
-            <div className='hero-text'></div>
+            <p className="heroes-superpowers">
+                <span>Суперсилы: </span>
+                {props.superpowers}
+            </p>
            </div>
             
             
