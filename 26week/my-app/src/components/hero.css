@@ -22,4 +22,5 @@ margin: 2%;
 .hero-card span{
     font-weight: bolder;
     margin-top: 2%;
+    text-align: left;
 }
