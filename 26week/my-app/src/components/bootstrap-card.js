@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-function KitchenSinkExample() {
+function KitchenSinkExample(props) {
   return (
     <Card className='row' >
       <Card.Img className='col-md-4 img-fluid' variant="top" src={props.url} />
