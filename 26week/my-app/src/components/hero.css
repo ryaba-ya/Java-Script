@@ -6,10 +6,10 @@
 }
 .hero-img{
     width: 100%;
-    float: left;
+    float: inline-start;
 }
 .hero-name{
     color: grey;
     font-size: 18px;
-    float: right;
+    float: inline-end;
 }
