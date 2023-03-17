@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Accordion from "react-bootstrap/Accordion";
+
 
 
 function BlockInfo(props) {
@@ -18,9 +18,7 @@ function BlockInfo(props) {
                     <div className="font-weight-bold mb-1">
                         Transactions:</div>
                     <div className="small">
-                        <Accordion>
-                          
-                        </Accordion>
+                        
                     </div>
                 </div>
             </Card.Body>
