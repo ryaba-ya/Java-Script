@@ -19,7 +19,7 @@ alterEgo={hero.alterEgo}
 img={hero.img}
 details={hero.details}
 friends={hero.friends}
-occupation={hero.occupation}
+superPower={hero.superPower}
 
 ></Hero>
 )
