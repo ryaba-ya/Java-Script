@@ -14,6 +14,9 @@ class App extends React.Component  {
 HeroesJson.map((hero)=>
 <Hero 
 name={hero.name}
+universe={hero.universe}
+alterEgo={hero.alterEgo}
+
 
 ></Hero>
 )
