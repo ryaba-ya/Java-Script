@@ -2,7 +2,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    width: 1000px;
    height: 500px;
-    margin: auto;
+    margin-top: 3%;
     text-align: left;
   flex-direction: row;
   display: flex;
