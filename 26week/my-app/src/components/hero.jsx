@@ -19,11 +19,11 @@ function Hero (props){
                 <span>Род деятельности:</span>
                 {props.occupation}
             </div>
-            <div className="heroes-superpowers">
+            <div className="wrap">
                 <span>Друзья: </span>
                 {props.friends}
             </div>
-            <div className="heroes-superpowers">
+            <div className="wrap">
                 <span>Суперсилы: </span>
                 {props.superPower}
             </div>
