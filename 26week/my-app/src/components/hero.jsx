@@ -1,13 +1,22 @@
 import './hero.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 function Hero (props){
     return(
-        <div className='hero-card'>
-            <img className='hero-img col-md-9' src={props.url}/>
-            <div className='hero-name' >{props.name}</div>
+        <Card className='hero-card'>
+            <Card.img variant='top' className='hero-img ' src={props.url}/>
+            <Card.Body>
+            <Card.Text className='hero-name' >{props.name}</Card.Text>
             <div className='hero-text'></div>
-            <button>Take home</button>
-        </div>
+            <Button>Take home</Button>
+            </Card.Body>
+            
+            
+        </Card>
     )
 }
+
+
+
 export default Hero;
