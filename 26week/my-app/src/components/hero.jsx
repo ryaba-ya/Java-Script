@@ -8,7 +8,7 @@ function Hero (props){
             <div className='hero-name' >{props.name}</div>
             <div className ="hero-text">{props.text}</div>
             <div className='hero-text'></div>
-            <button>Take home</button>
+            
            
             
             
