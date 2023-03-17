@@ -3,8 +3,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 function KitchenSinkExample() {
   return (
-    <Card className='row' style={{ width: '18rem' }}>
-      <Card.Img className='col-md-4 img-fluid' variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card className='row' >
+      <Card.Img className='col-md-4 img-fluid' variant="top" src={props.url} />
       <Card.Body className='col-md-8'>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -17,10 +17,7 @@ function KitchenSinkExample() {
         <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup>
-      <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
-      </Card.Body>
+  
     </Card>
   );
 }
