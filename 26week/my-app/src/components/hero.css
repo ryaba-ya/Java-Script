@@ -3,7 +3,7 @@
    width: 1000px;
    height: 500px;
     margin: auto;
-    text-align: center;
+    text-align: left;
   flex-direction: row;
   display: flex;
 }
@@ -18,6 +18,7 @@
 }
 .card-body{
 margin: 2%;
+text-align: left;
 }
 .hero-card span{
     font-weight: bolder;
