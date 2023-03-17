@@ -6,6 +6,7 @@
 }
 .hero-img{
     width: 100%;
+    float: left;
 }
 .hero-name{
     color: grey;
