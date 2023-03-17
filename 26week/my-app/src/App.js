@@ -16,7 +16,7 @@ HeroesJson.map((hero)=>
 name={hero.name}
 universe={hero.universe}
 alterEgo={hero.alterEgo}
-
+img={hero.img}
 
 ></Hero>
 )
