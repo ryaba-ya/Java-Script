@@ -7,10 +7,10 @@
 }
 .hero-img{
     width: 100%;
-    float: inline-start;
+   flex-direction: row;
 }
 .hero-name{
     color: grey;
     font-size: 18px;
-    float: inline-end;
+   
 }
