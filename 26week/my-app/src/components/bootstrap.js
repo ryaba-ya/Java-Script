@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
-import TranTable from "./blockTranTable";
+
 
 function BlockInfo(props) {
     return <div className="container-fluid col-12 col-md-10 mx-auto mt-2 mb-2">
@@ -19,19 +19,7 @@ function BlockInfo(props) {
                         Transactions:</div>
                     <div className="small">
                         <Accordion>
-                            <Card>
-                                <Accordion.Toggle as={Card.Header} eventKey="0" className="container-fluid">
-                                    Count:
-                                    <span className="font-weight-bold">
-                                        {props.blockData.result.transactions.length}
-                                    </span>
-                                </Accordion.Toggle>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <TranTable blockData={props.blockData} />
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
+                          
                         </Accordion>
                     </div>
                 </div>
