@@ -3,7 +3,7 @@
     max-width: 300px;
     margin: auto;
     text-align: center;
-    display: inline;
+    display: flex;
 }
 .hero-img{
     width: 100%;
