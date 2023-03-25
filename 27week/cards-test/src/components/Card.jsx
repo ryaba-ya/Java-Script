@@ -1,7 +1,7 @@
 import './card.css';
 function Card(props) {
     return (
-        <div className={"card-wrap" +(isSelected? 
+        <div className={"card-wrap" +(selected? 
         "selected":"") }>
 <header className={`tariff-name ${props.color}`}>{props.name}</header>
 <main className={`price ${props.color} `}>{props.price} руб/мес</main>
