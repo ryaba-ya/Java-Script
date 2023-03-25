@@ -5,17 +5,20 @@
 }
 .tariff-name{
     height: 10%;
-    border-top: rgb(27, 27, 27);
+    
   
 }
 .price{
 height: 20%;
+border-top: rgb(27, 27, 27);
 }
 .tariff-speed{
     height: 10%;
+    border-top: rgb(27, 27, 27);
 }
 .card-footer{
     height: 10%;
+    border-top: rgb(27, 27, 27);
 }
 .green {
     background-color: rgba(110, 208, 164, 0.684);
