@@ -11,10 +11,10 @@ class App extends React.Component {
       {
         TariffJson.map((card)=>
         <Card 
-name={card.name}
-price={card.price}
-speed={card.speed}
-footer_text={card.footer_text}>
+        name={card.name}
+        price={card.price}
+        speed={card.speed}
+        footer_text={card.footer_text}>
         </Card>
         
         )
