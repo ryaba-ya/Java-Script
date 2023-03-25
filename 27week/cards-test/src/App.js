@@ -4,16 +4,17 @@ import './App.css';
 import Card from './components/Card'
 
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
     <div className="App">
       {
         TariffJson.map((card)=>
-        <Card >
+        <Card 
 name={card.name}
 price={card.price}
 speed={card.speed}
-footer_text={card.footer_text}
+footer_text={card.footer_text}>
         </Card>
         
         )
@@ -22,5 +23,5 @@ footer_text={card.footer_text}
     </div>
   );
 }
-
+}
 export default App;
