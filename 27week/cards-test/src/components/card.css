@@ -32,3 +32,6 @@ border-top:1px solid rgb(27, 27, 27);
 .black{
     background-color: rgb(27, 27, 27);
 }
+.grey{
+    background-color: rgba(229, 236, 242, 0.679);
+}
