@@ -14,7 +14,8 @@ class App extends React.Component {
         name={card.name}
         price={card.price}
         speed={card.speed}
-        footer_text={card.footer_text}>
+        footer_text={card.footer_text}
+        color={card.color}>
         </Card>
         
         )
