@@ -19,7 +19,7 @@
         "speed": "100",
         "footer_text": "Объем включенного трафика не ограничен",
         "color":"red",
-        "isSelected":"true"
+        "isSelected":true
     },
     {
         "name": "Безлимитный 1000",
