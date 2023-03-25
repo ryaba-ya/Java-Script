@@ -1,0 +1,16 @@
+.card-wrap{
+    width: 200px;
+    height: 600px;
+}
+.tariff-name{
+    height: 10%;
+}
+.price{
+height: 20%;
+}
+.tariff-speed{
+    height: 10%;
+}
+.card-footer{
+    height: 10%;
+}
