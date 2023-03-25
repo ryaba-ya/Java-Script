@@ -4,6 +4,7 @@
 }
 .tariff-name{
     height: 10%;
+  
 }
 .price{
 height: 20%;
@@ -13,4 +14,7 @@ height: 20%;
 }
 .card-footer{
     height: 10%;
+}
+.green {
+    background-color: rgba(41, 128, 41, 0.684);
 }
