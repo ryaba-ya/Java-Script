@@ -18,7 +18,8 @@
         "price": "550",
         "speed": "100",
         "footer_text": "Объем включенного трафика не ограничен",
-        "color":"red"
+        "color":"red",
+        "selected":"true"
     },
     {
         "name": "Безлимитный 1000",
