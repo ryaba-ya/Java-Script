@@ -1,9 +1,11 @@
 .card-wrap{
     width: 200px;
     height: 600px;
+    border: 2px solid black;
 }
 .tariff-name{
     height: 10%;
+    border-bottom: rgb(27, 27, 27);
   
 }
 .price{
