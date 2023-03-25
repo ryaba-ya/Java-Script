@@ -16,8 +16,14 @@ height: 20%;
     height: 10%;
 }
 .green {
-    background-color: rgba(41, 128, 41, 0.684);
+    background-color: rgba(110, 208, 164, 0.684);
 }
 .red{
-    
+   background-color: rgb(243, 138, 110); 
+}
+.blue{
+    background-color: rgb(100, 216, 237);
+}
+.black{
+    background-color: rgb(27, 27, 27);
 }
