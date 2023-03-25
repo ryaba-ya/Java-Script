@@ -1,7 +1,8 @@
 .card-wrap{
     width: 200px;
     height: 600px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
 }
 .tariff-name{
     height: 10%;
@@ -10,15 +11,18 @@
 }
 .price{
 height: 20%;
-border-top:1px solid rgb(27, 27, 27);
+border-top:1px solid rgb(255, 255, 255);
+color: white;
 }
 .tariff-speed{
     height: 10%;
-    border-top:1px solid rgb(27, 27, 27);
+    border-top:1px solid rgb(255, 255, 255);
+    color: gray;
 }
 .card-footer{
     height: 10%;
-    border-top:1px solid rgb(27, 27, 27);
+    border-top:1px solid rgb(255, 255, 255);
+    color: gray;
 }
 .green {
     background-color: rgba(110, 208, 164, 0.684);
