@@ -16,7 +16,7 @@ class App extends React.Component {
         speed={card.speed}
         footer_text={card.footer_text}
         color={card.color}
-        isSelected={card.isSelected}>
+        selected={card.selected}>
         </Card>
         
         )

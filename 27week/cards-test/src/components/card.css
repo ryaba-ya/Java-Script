@@ -39,7 +39,7 @@ color: white;
 .grey{
     background-color: rgba(229, 236, 242, 0.679);
 }
-.selected {
+.select {
     border: 5px solid rgba(148, 151, 151, 0.701);
     box-shadow: 0 0 30px 5px gray;
 }
