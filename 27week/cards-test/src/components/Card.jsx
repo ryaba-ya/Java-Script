@@ -1,6 +1,6 @@
 import './card.scss';
 function Card(props) {
-    const {isSelected } = props;
+    const {isSelected, } = props;
     return (
         <div className={"card-wrap"+ (isSelected?"selected":"")}>
 <header className={`tariff-name ${props.color}`}>{props.name}</header>
