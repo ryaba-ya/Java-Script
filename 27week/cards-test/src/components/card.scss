@@ -1,0 +1,47 @@
+$textColor:#ffff ;
+$textColor2:rgb(110, 104, 104) ;
+.card-wrap{
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    color: $textColor;
+}
+.tariff-name{
+    height: 20%;
+    
+  
+}
+.price{
+height: 40%;
+border-top:1px solid rgb(255, 255, 255);
+color: $textColo;
+}
+.tariff-speed{
+    height: 20%;
+    border-top:1px solid rgb(255, 255, 255);
+    color: $textColor2;
+}
+.card-footer{
+    height: 20%;
+    border-top:1px solid rgb(255, 255, 255);
+    color: $textColor2;
+}
+.green {
+    background-color: rgba(110, 208, 164, 0.684);
+}
+.red{
+   background-color: rgb(243, 138, 110); 
+}
+.blue{
+    background-color: rgb(100, 216, 237);
+}
+.black{
+    background-color: rgb(27, 27, 27);
+}
+.grey{
+    background-color: rgba(229, 236, 242, 0.679);
+}
+.select {
+    border: 5px solid rgba(148, 151, 151, 0.701);
+    box-shadow: 0 0 30px 5px gray;
+}
