@@ -1,6 +1,6 @@
 import React from 'react';
 import TariffJson from './card_data.json'
-import './App.css';
+import './App.scss';
 import Card from './components/Card'
 
 
@@ -14,7 +14,7 @@ class App extends React.Component {
         name={card.name}
         price={card.price}
         speed={card.speed}
-        footer_text={card.footer_text}
+        footerText={card.footerText}
         color={card.color}
         selected={card.selected}>
         </Card>
