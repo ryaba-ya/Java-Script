@@ -6,6 +6,7 @@ const Table = (props) => {
         <tr key={row.id}>
       <td>{row.english}</td>
       <td>{row.transcription}</td>
+      <td>{row.russian}</td>
     </tr>
     ))
   return (
