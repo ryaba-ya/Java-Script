@@ -1,8 +1,8 @@
 import React from 'react';
-import words from '../../Words.json'
+
 const Table = (props) => {
     const words = require('../../Words.json');
-
+  
     const {words,isEdit}=props;
     const tableRows = words.map((row)=>(
         <tr key={row.id}>
