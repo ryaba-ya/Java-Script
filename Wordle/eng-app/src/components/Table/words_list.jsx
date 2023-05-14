@@ -1,7 +1,13 @@
 import React from 'react';
 import words from '../../Words.json'
 const Table = (props) => {
-    const data = JSON.parse(words);
+    const tableData = JSON.parse(words);
+    const tableRows = tableData.map((row)=>(
+        <tr key={row.id}>
+      <td>{row.english}</td>
+      <td>{row.transcription}</td>
+    </tr>
+    ))
   return (
     <table>
       <thead>
@@ -12,13 +18,7 @@ const Table = (props) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((row, index) => (
-          <tr key={index}>
-            <td>{row.column1}</td>
-            <td>{row.column2}</td>
-            {/* Add more cells if needed */}
-          </tr>
-        ))}
+      {tableRows}
       </tbody>
     </table>
   );
