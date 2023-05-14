@@ -4,7 +4,7 @@ import Table from './components/Table/words_list';
 
 function App() {
   return (
-    <Table >
+    <Table isEdit={isEdit}>
 
     </Table>
   );

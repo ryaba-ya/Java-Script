@@ -1,12 +1,20 @@
 import React from 'react';
 import words from '../../Words.json'
 const Table = (props) => {
-    const tableData = require('../../Words.json');
-    const tableRows = tableData.map((row)=>(
+    const words = require('../../Words.json');
+
+    const {words,isEdit}=props;
+    const tableRows = words.map((row)=>(
         <tr key={row.id}>
       <td>{row.english}</td>
       <td>{row.transcription}</td>
       <td>{row.russian}</td>
+      {isEdit && (
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            )}
     </tr>
     ))
   return (
@@ -16,6 +24,7 @@ const Table = (props) => {
           <th>English</th>
           <th>Transcription</th>
           <th>Russian</th>
+          {isEdit && <th>Actions</th>}
         </tr>
       </thead>
       <tbody>
