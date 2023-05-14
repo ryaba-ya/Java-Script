@@ -8,6 +8,7 @@ const Table = (props) => {
       <td>{row.english}</td>
       <td>{row.transcription}</td>
       <td>{row.russian}</td>
+      <td><button>Edit</button></td>
      
     </tr>
     ))
