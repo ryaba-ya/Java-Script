@@ -1,11 +1,12 @@
-
+import React from 'react'
 import './App.css';
+import Table from './components/Table/words_list';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Table data={data}>
+
+    </Table>
   );
 }
 
